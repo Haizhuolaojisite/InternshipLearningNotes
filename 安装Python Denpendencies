@@ -1,0 +1,31 @@
+1. cmd
+用Anaconda创建一个新的envs,指令是：
+conda create -n xxxxx python = 3.7 (xxxxx是文件夹的名字，可以替换滴）
+
+2. 安装pip based on my conda envs's python script path
+  1). install setuptools,输入： 
+  curl https://bootstrap.pypa.io/ez_setup.py | python
+  
+  2). install pip,输入：
+  curl https://bootstrap.pypa.io/get-pip.py | python
+  
+3. Install a Package in Python using PIP
+  1)开始菜单输入‘Command Prompt’,点击‘Run as administrator’(避免permission issue)
+  
+  2)输入‘cd\’(确保开始点只有drive名称),回车
+  
+  3)找到‘C:\Users\yixua\Anaconda3\envs\xxxxx’Python Script Path,回车
+  
+  4)pip install cv2
+    pip install Pillow
+    PyTorch的可以到官网看它的安装指令
+
+4.cmd中激活环境：
+conda activate xxxxx
+conda activate base
+
+5.PyCharm 
+  1)File->settings->Project->Python Interpreter->齿轮->show all->加号
+    ->Existing environment
+    
+  2)Terminal中输入：‘git pull’ (更新覆盖本地文件，如果本地文件和旧的历史记录中的代码不同会报错：可以删除重来，或者复原本地旧的代码）
